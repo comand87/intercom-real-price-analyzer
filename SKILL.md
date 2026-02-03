@@ -41,6 +41,38 @@ These choices should be surfaced as the initial configuration flow for the skill
 ## Quick Start (Clone + Run)
 Use Pear runtime only (never native node).
 
+### Prerequisites (Node + Pear)
+Intercom requires **Node.js >= 22** and the **Pear runtime**.
+
+macOS (Homebrew):
+```bash
+brew install node@22
+node -v
+npm -v
+```
+
+Linux (nvm):
+```bash
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+source ~/.nvm/nvm.sh
+nvm install 22
+nvm use 22
+node -v
+```
+
+Windows (Node installer or nvm-windows):
+```bash
+node -v
+npm -v
+```
+
+Install Pear runtime (all OS):
+```bash
+npm install -g pear
+pear -v
+```
+`pear -v` must run once to download the runtime before any project commands will work.
+
 ```bash
 git clone https://github.com/Trac-Systems/intercom
 cd intercom
